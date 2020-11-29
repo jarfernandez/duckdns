@@ -28,4 +28,3 @@ done
 rm -f ${OUTPUT_TEMP_FILE}
 
 echo "$(date +"${DATE_FORMAT_LOG}") ${log_entry}" >> ${UPDATE_DUCKDNS_LOG}
-
