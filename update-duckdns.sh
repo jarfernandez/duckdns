@@ -17,6 +17,7 @@ first_line=$(head -1 ${OUTPUT_TEMP_FILE})
 if [[ $output -ne 0 || $first_line != "OK" && $first_line != "KO" ]]
 then
   echo "$(date +"${DATE_FORMAT_LOG}") ERROR"
+  rm -f ${OUTPUT_TEMP_FILE}
   exit 1
 fi
 
